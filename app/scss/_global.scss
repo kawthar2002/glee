@@ -1,0 +1,23 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+main {
+    flex-grow: 1;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,194 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+    padding: 20px 0;
+    color: #436372;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            font-size: 36px;
+            line-height: 58px;
+            color: #436372;
+            display: flex;
+            @extend %rubik-500;
+        }
+        &__menu {
+            display: flex;
+        }
+        &__list {
+            margin-right: 30px;
+        }
+        &__link {
+            color: #436372;
+        }
+        &__user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fcd7b6;
+            width: 178px;
+            height: 51px;
+            margin-right: 10px;
+            border-radius: 30px;
+            position: relative;
+            &-line {
+                position: absolute;
+                top: 10px;
+                left: 89px;
+            }
+        }
+        &__heart {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        &__cart {
+            position: absolute;
+            top: 20px;
+            right: 30px; 
+        }
+        &__search {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+            background-color: #edf1f4;
+            position: relative;
+            &-btn {
+                position: absolute;
+                top: 15px;
+                left: 17px;
+            }
+        }
+        &__more {
+            background-color: #a3bbc8;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+            &-btn {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+
+            }
+        }
+    }
+}
+.heart-image,
+.cart-image {
+    position: relative;
+    &__num {
+        font-size: 10px;
+        line-height: 17px;
+        @extend %dmsans-400;
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: #fff;
+        position: absolute;
+        top: -9px;
+        left: 11px;
+    }
+}
+.logo-img {
+    margin-right: 10px;
+}
+.cls-1 {
+    fill: #243f4d;
+    fill-rule: evenodd;
+  }
+.footer {
+    color: #7b7b7b;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 100%;
+}
+.footer-top {
+    padding: 90px 0 85px;
+    display: flex;
+    column-gap: 98px;
+    align-items: baseline;
+    border-bottom: 1px solid #dae4e9;
+    &__link {
+        margin-bottom: 15px;
+        display: block;
+        line-height: 25px;
+    }
+    &__logo {
+        margin-bottom: 25px;
+    }
+    &__column {
+        max-width: 200px;
+        &-form {
+            max-width: 269px;
+        }
+    }
+    &__phone {
+        display: block;
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 100%;
+        @extend %dmsans-700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: #5b5b76;
+    }
+    &__text {
+        margin-bottom: 35px;
+        line-height: 25px;
+    }
+    &__form {
+       &-input {
+        background-color: #fef7f0;
+        border: none;
+        padding: 11px 14px;
+        font-size: 12px;
+        @extend %dmsans-400;
+        color: #234969;
+       }
+        &-btn {
+            background-color: #a3bbc8;
+            border: none;
+            font-size: 12px;
+            @extend %dmsans-400;
+            color: #ffffff;
+            padding: 11px 14px;
+            margin-left: -4px;
+            
+        }
+    }
+}
+.footer-bottom {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 32px;
+    &__item {
+        border-right: 1px solid #7b7b7b;
+        padding: 0 10px;
+    }
+    &__item:last-child {
+        border: none;
+        padding-right: 0;
+    }
+}
+
+@import 'media';
