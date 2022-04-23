@@ -113,6 +113,66 @@
     fill: #243f4d;
     fill-rule: evenodd;
   }
+  .slider {
+      &__inner {
+        background-color: #fcd7b6;
+        padding-bottom: 45px;
+        padding-top: 220px;
+      }
+      &__item {
+          display: flex;
+      }
+      &__content {
+          max-width: 450px; 
+      }
+      &__title {
+        @extend %rubik-700;
+        font-size: 72px;
+        line-height: 70px;
+        color: #243f4d;
+      }
+      &__text {
+          color: #436372;
+          @extend %rubik-500;
+          font-size: 18px;
+          line-height: 30px;
+          max-width: 370px;
+          padding-bottom: 35px;
+      }
+      &__link {
+          color: #ffffff;
+          font-size: 15px;
+          line-height: 12px;
+          background-color: #a3bbc8;
+          padding: 15px 24px;
+          @extend %rubik-400;
+      }
+      &__link span {
+          margin-right: 50px;
+      }
+    
+  }
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+}
+ .slick-dots button {
+     @extend %rubik-500;
+     font-size: 11px;
+     line-height: 9px;
+     width: 29px;
+     height: 29px;
+     margin-right: 10px;
+     background-color: #fde3cc;
+     color: #243f4d;
+     border: none;
+     border-radius: 50%;
+ }
+ .slick-active button {
+     background-color: #fff;
+ }
+ 
 .footer {
     color: #7b7b7b;
     @extend %rubik-400;
