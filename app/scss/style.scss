@@ -122,7 +122,7 @@
 .footer-top {
     padding: 90px 0 85px;
     display: flex;
-    column-gap: 98px;
+    justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #dae4e9;
     &__link {
