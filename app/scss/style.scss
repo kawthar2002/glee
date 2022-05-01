@@ -415,6 +415,188 @@
         align-items: center;
     } 
 }
+.blog {
+    padding: 100px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+        &__title {
+            margin-left: 30px;
+            font-size: 36px;
+            @extend %dmsans-700;
+        }
+        &__link {
+            font-size: 16px;
+            @extend %dmsans-700;
+        }
+        &__link span {
+            margin-right: 10px;
+        }
+    }
+    &__items {
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: -297px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;     
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        width: 103px;
+        height: 30px;
+        background-color: #a3bbc8;
+        padding: 5px 20px;
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+        @extend %dmsans-700;
+        margin-left: 25px; 
+        align-self:baseline;
+        margin-top: -15px;
+    }
+    &__content {
+        padding: 30px 25px 15px;
+        min-height: 170px;
+    }
+    &__text {
+        max-width: 280px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        @extend %dmsans-500;
+        color: #343434;
+    }
+    &-info {
+        border-top: 1px solid #e0e0e0;
+        padding: 20px 0;
+        &__link-date {
+            margin-right: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            @extend %rubik-400;
+        }
+        &__link-admin {
+            text-transform: uppercase;
+            @extend %rubik-400;
+            font-size: 12px;
+        }
+    }
+}
+.logo{
+    background-color: #fef7f0;
+    padding: 260px 0 80px;
+    &-box {
+        background-color: #fef7f0;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item + .logo__item {
+        margin-left: 70px;
+    }
+}
+.top {
+    height: 125px;
+    background-color: #edf1f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+        font-size: 32px;
+        line-height: 22px;
+        color: #222933;
+        @extend %rubik-400;
+    }
+}
+.modal {
+    max-width: 470px;
+    margin: 0 auto 115px;
+    padding-top: 110px;
+    &__form {
+      
+    }
+    &__label {
+        color: #436372;
+        font-size: 14px;
+        @extend %rubik-400;
+        &-checkbox {
+            color: #436372;
+            font-size: 14px;
+            @extend %rubik-400;
+            display: block;
+            align-self: baseline;
+            border-bottom: 1px solid #f6f6f6; 
+            padding-bottom: 25px;
+        }
+        &-checkbox input {
+            background-color: #ebebeb;
+        }
+        &-account {
+            margin-top: 30px;
+            display: block;
+            color: #436372;
+            font-size: 14px;
+            @extend %rubik-400;
+            text-align: center;
+            
+        }
+
+    }
+    &__link-pass {
+        margin-left: 190px;
+    }
+    &__account {
+        display: block;
+        width: 100%;
+        border: 1px solid #a3bbc8;
+        color: #243f4d;
+        font-size: 18px;
+        line-height: 100%;
+        @extend %rubik-500;
+        padding: 20px 0;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        height: 60px;
+        padding: 0 15px;
+        border: 1px solid #f6f6f6;
+        margin-bottom: 20px;
+    }
+    &__login {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        color: #fff;
+        @extend %rubik-500;
+        line-height: 100%;
+        align-items: center;
+        text-align: center;
+        background-color: #a3bbc8;
+        border: none;
+        padding: 20px 0;
+        margin: 30px 0;
+    }
+}
 .footer {
     color: #7b7b7b;
     @extend %rubik-400;

@@ -2,7 +2,6 @@ html,
 body {
     height: 100%;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -32,3 +31,21 @@ a:hover {
     fill: #243f4d;
     fill-rule: evenodd;
   }
+.breadcrumbs {
+    margin-top: 10px;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        color: #83898f;
+        font-size: 14px;
+        @extend %rubik-400;
+    }
+    &__item+.breadcrumbs__item {
+        margin-left: 8px;
+    }
+    &__item span {
+        margin-left: 5px;
+    }
+   
+}
