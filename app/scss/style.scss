@@ -220,7 +220,7 @@
          column-gap: 30px;
          max-width: 1170px;
          flex-wrap: wrap;
-        margin: 0 auto;
+         margin: 0 auto;
      } 
      &-item {
          width: 260px;
@@ -239,6 +239,7 @@
              justify-content: center;
              margin-bottom: 65px;
              margin-top: -120px;
+             display: none;
          }
          &__link-search {
              position: relative;
@@ -282,7 +283,12 @@
              @extend %dmsans-700;
         }
     }
+    &-item:hover .products-item__box {
+        display: flex;
+        cursor: pointer;
+    }
  }
+
 .products-nav {
     display: flex;
     text-align: center;
@@ -415,6 +421,132 @@
         align-items: center;
     } 
 }
+.getintouch {
+    max-width: 1170px;
+    margin: 0 auto 130px;
+    padding-top: 110px;
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        @extend %rubik-700;
+        color: #a3bbc8;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__title {
+        color: #436372;
+        font-size: 35px;
+        @extend %dmsans-700;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    &__items {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+    }
+    &__item {
+        background-color: #fbfbfb;
+        width: 370px;
+        padding: 0 0 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__item:hover {
+        border: 2px solid #a3bbc8;
+       
+    }
+    &__icon--active {
+        display: none;
+    }
+    &__item:hover .getintouch__icon--active {
+        display: block;
+    }
+    &__item:hover .getintouch__icon {
+        display: none;
+    }
+    &__address {
+        font-size: 20px;
+        line-height: 26px;
+        @extend %dmsans-700;
+        color: #222222;
+        margin-bottom: 25px;
+        
+    }
+    &-info__item {
+        font-size: 16px;
+        line-height: 30px;
+        @extend %rubik-400; 
+        color: #565872;
+    }
+}
+.location {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    &-info {
+        
+        &__box {
+            margin-bottom: 20px;
+            display: flex;
+            column-gap: 25px;
+        }
+        &__form {
+            background-color: #fafafa;
+            border: none;
+            padding: 15px; 
+            display: flex;
+        }
+        &__item {
+            color: #77788d;  
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            background-color: #fafafa;
+            width: 290px;
+        }
+        &__message {
+            height: 175px;
+            width: 100%;
+            border: none;
+            background-color: #fafafa;
+            text-transform: uppercase;
+            padding: 10px 15px 140px;
+            margin-bottom: 25px;
+        }
+        &__textarea svg {
+           position: absolute;
+           top: 15px;
+           right: 15px;
+        }
+        &__textarea {
+            position: relative;
+        } 
+        &__btn {
+            width: 195px;
+            border: none;
+            font-size: 15px;
+            line-height: 55px;
+            color: #fff;
+            @extend %dmsans-700;
+            text-transform: uppercase;
+            background-color: #a3bbc8;
+            cursor: pointer;
+        }
+    }
+    &-map {
+        margin-left: 25px;
+    }
+}
+#location-info__name {
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+    
+}
 .blog {
     padding: 100px 0;
     max-width: 1170px;
@@ -445,7 +577,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #fff;     
+        background-color: #fff;  
+        z-index: 10; 
     }
     &__link {
         font-size: 14px;
@@ -467,6 +600,8 @@
     &__content {
         padding: 30px 25px 15px;
         min-height: 170px;
+        display: flex;
+        flex-direction: column;
     }
     &__text {
         max-width: 280px;
@@ -474,6 +609,7 @@
         font-size: 18px;
         @extend %dmsans-500;
         color: #343434;
+        flex-grow: 1;
     }
     &-info {
         border-top: 1px solid #e0e0e0;
